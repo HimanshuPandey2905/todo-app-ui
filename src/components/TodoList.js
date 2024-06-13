@@ -16,6 +16,7 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
             onClick={() => removeTodo(todo.id)}
             className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 transition duration-150 ease-in-out"
           >
+
             Delete
           </button>
         </li>
@@ -23,5 +24,5 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
     </ul>
   );
 }
-
 export default TodoList;
+// hello from local

@@ -3,10 +3,8 @@ import React, { useState, useEffect } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import { getTodos, createTodo, deleteTodo } from "./api"; // Import API functions
-
 function App() {
   const [todos, setTodos] = useState([]);
-
   useEffect(() => {
     const fetchTodos = async () => {
       try {
@@ -19,6 +17,9 @@ function App() {
     fetchTodos();
   }, []);
 
+  const addTwoNumbers = (num1, num2) => {
+    return num1 + num2;
+  };
   const addTodo = async (text) => {
     const newTodo = { title: text, completed: false }; // Assuming your backend expects a 'title' field
     try {
@@ -29,13 +30,15 @@ function App() {
     }
   };
 
+  const printHelloWorld = () => {
+    console.log("Hello, World!");
+  };
   const toggleTodo = (id) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     );
     setTodos(updatedTodos);
   };
-
   const removeTodo = async (id) => {
     try {
       await deleteTodo(id);
@@ -44,7 +47,6 @@ function App() {
       console.error("Failed to delete todo:", error);
     }
   };
-
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-xl font-bold mb-4">Todo List</h1>
@@ -53,5 +55,6 @@ function App() {
     </div>
   );
 }
-
 export default App;
+
+// hello from local

@@ -1,5 +1,5 @@
 // src/api.js
-const API_BASE_URL = "http://code-crafter-api.magicedtech.com:59917/api/todos"; // Adjust if your API has a different base URL
+const API_BASE_URL = "http://code-crafter-api.magicedtech.com:34825/api/todos"; // Adjust if your API has a different base URL
 export const getTodos = async () => {
   const response = await fetch(API_BASE_URL);
   if (!response.ok) {
