@@ -1,0 +1,6 @@
+projectKey=code_crafter_todo_app_react_java_ui
+serverUrl=https://sonarqube.magicsw.com
+serverVersion=8.9.10.61524
+dashboardUrl=https://sonarqube.magicsw.com/dashboard?id=code_crafter_todo_app_react_java_ui
+ceTaskId=AZAQ45OX2v8M8vUSw6e_
+ceTaskUrl=https://sonarqube.magicsw.com/api/ce/task?id=AZAQ45OX2v8M8vUSw6e_
